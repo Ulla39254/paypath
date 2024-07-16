@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paypath</title>
+        <!-- favicon  -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- faremwork of css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+        <!-- style sheet of css        -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive sheet of css -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- fonts awsome icon link            -->
+        <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+        <!-- slick-slider link css -->
+        <link rel="stylesheet" href="assets/css/slick.min.css">
+        <!-- animation of css -->
+        <link rel="stylesheet" href="assets/css/aos.css">
+    </head>
+<body>
+    <div class="site-wrapper">
+        <!-- ======== 5.1. map help section ========  -->
+        <div class="first_nav_hero_about">
+             <!-- ======== 1.1. header section ======== -->
+             <header>
+                <nav class="container navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <!-- site logo -->
+                        <a class="nav-logo p-0" href="index.html"><img src="assets/images/Logo.png" alt="logo"></a>
+                                <!-- navigation button  -->
+                        <button class="navbar-toggle" onclick="openNav()" type="button"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-2 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link " href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="feature.html">Feature</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Pages <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                                        <li><a class="dropdown-item active" href="contact.html">Contact</a></li>
+                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                        <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+                                        <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                        <li><a class="dropdown-item" href="404.html">404</a></li>
+                                        <li><a class="dropdown-item" href="coming.html">Coming Soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="search-bar-bt" class="nav-link" href="#"><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                </li>
+                                <li class="nav-item header_btn ">
+                                    <a class="nav-link btn-hover1 lh-1" href="#">Create Account</a>
+                                </li>
+                                <li class="nav-item" onclick="open_right_side()">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--============ navigation left slidebar================-->
+                <aside>
+                    <div id="mySidenav" class="sidenav">
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-4 pe-3">
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/Logo.png" alt="img"
+                                class="nav-logo"></a></figure>
+                            <div class="closebtn" onclick="closeNav()"><i
+                                    class="fa-solid fa-square-xmark side-bar-close-btn"></i></div>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feature.html">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between pt-3" id="slid-btn">
+                                    <button class="a-slid">Pages</button>
+                                    <i class="fa-solid fa-caret-down pe-4"></i>
+                                </div>
+                                <ul id="slid-drop" class="myst">
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="coming.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--================== navigation drop search bar================-->
+                <div class="search" id="search-bar">
+                    <form class="d-flex nav-search">
+                        <input type="text" name="search" placeholder="Enter your text">
+                        <button class="btn-hover1" type="submit">Search</button>
+                    </form>
+                    <button id="remove-btn">
+                        <i class="fa-solid fa-square-xmark "></i>
+                    </button>
+                </div>
+                <!--=================navigation Right slidebar==================-->
+                <section class="right-sidbar" id="right_side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- site logo -->
+                        <a class="p-0 " href="index.html"><img src="assets/images/Logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p class="mt-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <a href="#" class="btn-hover1">Discover More</a>
+                    <hr>
+                    <h5 class="mt-4 mb-4">Connected details:</h5>
+                    <ul class="d-flex flex-column gap-3">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#">yourname@email.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#">+123-456-7890</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-clock"></i></a>
+                            <a href="#">Office Hours: 8AM - 11PM Sunday -
+                                Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="d-flex gap-4 mt-4">
+                        <a href="#" class="p-0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="p-0"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="p-0"><i class="fa-brands fa-twitter"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ======== End of 1.1. header section ========  -->
+            <!-- ======== 5.1. contact-hero section ========  -->
+            <div class="container">
+                <div class="contact-hero">
+                    <h2 class="text-center">CONTACT</h2>
+                    <P class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis quam aut corrupti Lorem ipsum dolor sit amet consectetur.</P>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96748.5656858991!2d-74.26445728824706!3d40.73138423906509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25370329a0e1d%3A0xe1bcdc2adcfee473!2sNewark%2C%20NJ%2C%20USA!5e0!3m2!1sen!2s!4v1691826891864!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- ======== End of 5.1. contact-hero section ========  -->
+        </div>
+        <section class="d-flex justify-content-center">
+            <div class="help position-relative">
+            <div class="container">
+                <div class="row d-flex gap-lg-5 gap-md-3 gap-sm-4 gap-3 justify-content-center">
+                    <div class="col-lg-5 col-md-5 help-crd1" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        <h4>HOW CAN WE HELP?</h4>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. assumenda eligendi debitis sunt sequi tempora corporis, sed id animi eveniet.</P>
+                        <div class="d-flex gap-4 align-items-center">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Plaza X, XY Floor, XYZ Street</span>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+123-456-7890</span>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>yourname@email.com</span>
+                        </div>
+                        <h5>OPERATING HOURS</h5>
+                        <div class="d-flex gap-4 align-items-center">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Monday To Friday <br> 8:00am to 8:00pm AEDT</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 contact-email" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        <h4>EMAIL US</h4>
+                        <form action="action_page.php"  id="footer-sub">  
+                            <div class="row justify-content-center gap-3">
+                                <input type="text" name="name" id="name" class="col-md-5 col-sm-12 col-12" placeholder="Your Name" required>
+                                <input type="email" name="email" id="email" class="col-md-5 col-sm-12 col-12" placeholder="Email Address" required>
+                                <input type="number" name="number" id="number" class="col-md-5 col-sm-12 col-12" placeholder="Phone Number" required>
+                                <input type="text" name="subject" id="subject" class="col-md-5 col-sm-12 col-12" placeholder="Subject" required>
+                                <textarea class="col-md-11 col-12" name="massage" id="massage" cols="30" rows="10" placeholder="Write here message"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center mt-4">
+                                <button class=" e-btn btn-hover1" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="Succes-box"></div> 
+                </div>
+            </div>
+            </div>
+        </section>
+         <!-- ======== End of 5.1. map help section ========  -->
+         <!-- ======== 1.13. footer section ========  -->
+         <footer>
+            <div class="container">
+                <h4 class="text-center">SUBSCRIBE OUR NEWSLETTER</h4>
+                <P class="text-center pt-2 pb-3">Get latest News and Updates</P>
+                <form class="d-flex align-items-center justify-content-center" id="footer-sub2">
+                    <!-- form Subscribe massage -->
+                    <div id="Succes-box2"></div>
+                    <div class="d-flex footer-search ">
+                        <input type="email" name="search" placeholder="Enter your Email" required>
+                        <button type="submit" class="btn-hover1">Subscribe</button>
+                    </div>
+                </form>
+                <div class="footer-logo text-center pb-lg-4 pb-md-3 pb-sm-2 pb-4">
+                    <!-- footer logo  -->
+                    <a href="index.html">
+                        <figure><img src="assets/images/Logo.png" alt="img"></figure>
+                    </a>
+                </div>
+                <ul class="d-flex align-items-center justify-content-center">
+                    <li>
+                        <a href="#">Feature</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Faq</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row footer-nav-icon">
+                    <!-- footer social icon  -->
+                    <div class="col-lg-3 col-md-3 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                        <div
+                            class="social-icon d-flex gap-2 justify-content-md-start justify-content-sm-center justify-content-center">
+                            <a href="#"> <i class="fa-brands fa-facebook-f foot-facebook"></i></a>
+                            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- footer terms privacy  -->
+                    <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class=" d-flex gap-3 p-2">
+                            <a href="#">Terms & Condition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <!-- footer logo slider  -->
+                    <div class="col-lg-3 col-md-3">
+                        <div class="footer_ispsum_slider">
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="Copyright d-flex justify-content-between flex-wrap dir">
+                        <p>Copyright © 2023 Paypath by Evonicmedia. All Right Reserved.</p>
+                        <p>Powered by Evonicsoft</p>
+                    </div>
+                </div>
+        </footer>
+        <!-- ======== End of 1.13. footer section ========  -->
+    </div>
+
+
+
+
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <!-- bootstrap min javascript -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- counter javascript file -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+      </script>
+      <script>
+        // form Submit massage
+const aboutForm = document.getElementById('footer-sub');
+const aboutMessage = document.getElementById('Succes-box');
+aboutForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    aboutMessage.innerHTML = 'Form submitted successfully!';
+    aboutMessage.style.display = 'block';
+    aboutForm.reset();
+    setTimeout(() => {
+      aboutMessage.style.display = 'none';
+    }, 3000);
+});
+      </script>
+</body>
+</html>

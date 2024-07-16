@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- faremwork of css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+    <!-- style sheet of css        -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- fonts awsome icon link            -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/font-awesome.min.css">
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <title>Paypath</title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="first_nav_hero_about">
+            <!-- ======== 1.1. header section ======== -->
+            <header>
+                <nav class="container navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <!-- site logo -->
+                        <a class="nav-logo p-0" href="index.html"><img src="assets/images/Logo.png" alt="logo"></a>
+                        <!-- navigation button  -->
+                        <button class="navbar-toggle" onclick="openNav()" type="button"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- navigation bar manu  -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center align-items-center gap-lg-2 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="feature.html">Feature</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link " href="#">Pages <i
+                                            class="fa-sharp fa-solid fa-sort-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                        <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                        <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+                                        <li><a class="dropdown-item active" href="faq.html">FAQ</a></li>
+                                        <li><a class="dropdown-item" href="404.html">404</a></li>
+                                        <li><a class="dropdown-item" href="coming.html">Coming Soon</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="search-bar-bt" class="nav-link" href="#"><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                </li>
+                                <li class="nav-item header_btn ">
+                                    <a class="nav-link btn-hover1 lh-1" href="#">Create Account</a>
+                                </li>
+                                <li class="nav-item" onclick="open_right_side()">
+                                    <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--============ navigation left slidebar================-->
+                <aside>
+                    <div id="mySidenav" class="sidenav">
+                        <div class="side-nav-logo d-flex justify-content-between align-items-center ps-4 pe-3">
+                            <figure class="navbar-brand"><a href="index.html"><img src="assets/images/Logo.png" alt="img"
+                                        class="nav-logo"></a></figure>
+                            <div class="closebtn" onclick="closeNav()"><i
+                                    class="fa-solid fa-square-xmark side-bar-close-btn"></i></div>
+                        </div>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feature.html">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-flex align-items-center justify-content-between pt-3" id="slid-btn">
+                                    <button class="a-slid">Pages</button>
+                                    <i class="fa-solid fa-caret-down pe-4"></i>
+                                </div>
+                                <ul id="slid-drop" class="myst">
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="coming.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--================== navigation drop search bar================-->
+                <div class="search" id="search-bar">
+                    <form class="d-flex nav-search">
+                        <input type="text" name="search" placeholder="Enter your text">
+                        <button class="btn-hover1" type="submit">Search</button>
+                    </form>
+                    <button id="remove-btn">
+                        <i class="fa-solid fa-square-xmark "></i>
+                    </button>
+                </div>
+                <!--=================navigation Right slidebar==================-->
+                <section class="right-sidbar" id="right_side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- site logo -->
+                        <a class="p-0 " href="index.html"><img src="assets/images/Logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p class="mt-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <a href="#" class="btn-hover1">Discover More</a>
+                    <hr>
+                    <h5 class="mt-4 mb-4">Connected details:</h5>
+                    <ul class="d-flex flex-column gap-3">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#">yourname@email.com</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#">+123-456-7890</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-clock"></i></a>
+                            <a href="#">Office Hours: 8AM - 11PM Sunday -
+                                Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="d-flex gap-4 mt-4">
+                        <a href="#" class="p-0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="p-0"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="p-0"><i class="fa-brands fa-twitter"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ======== End of 1.1. header section ========  -->
+            <!-- ======== 8.1. question section ========  -->
+            <div class="container">
+                <div class="ques-top-text" >
+                    <h2>QUESTIONS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur officia numquam nemo.</p>
+                </div>
+                <div class="question-page">
+                    <h4>HOW TO USE?</h4>
+                    <p  class="page-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga rerum consectetur.</p>
+                    <div class="question-collapes" data-aos="zoom-in">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How does microfinancing work?
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam possimus
+                                            minima, saepe praesentium expedita non error. Consectetur tempore maxime
+                                            repudiandae deleniti animi omnis inventore aspernatur, exercitationem
+                                            voluptas
+                                            qui veniam maiores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What types of businesses are eligible for this service?
+                                    </button>
+                                </h5>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit perferendis
+                                            quibusdam tempore. A vel maxime obcaecati aperiam omnis deserunt mollitia
+                                            commodi, modi dolorem eos dicta, iusto sunt ipsa sequi laborum!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        How long does it take to receive funds?
+                                    </button>
+                                </h5>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus ullam
+                                            ab
+                                            consequuntur assumenda nisi quibusdam exercitationem qui similique ducimus
+                                            molestias iusto facere quidem ratione, pariatur repudiandae! Vitae, quia
+                                            doloremque?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h5 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        How can I contact with support?
+                                    </button>
+                                </h5>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                                            molestias
+                                            illo quisquam esse. Sapiente animi est sint ex? Vero voluptatum voluptatem
+                                            natus
+                                            pariatur harum maiores eos possimus consectetur repellat quidem?</p>
+                                    </div>
+                                </div>
+                            </div>                                                                              
+                      </div>
+                    </div>
+                </div>
+
+               <div class="accordian-2nd">
+                <h4 class="mt-lg-5 mt-md-3 mt-sm-1 mt-1">FREE CHARGES AND FEATURES</h4>
+                <p  class="page-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quod mollitia pariatur.</p>
+                <div class="accordion1"  data-aos="zoom-in">
+                    <div class="accordion-item1">
+                      <div class="accordion-header1">
+                       <h6>  What are the fees associated with using our fintech services?</h6>
+                        <div class="accordion-toggle1 accordion-toggle-img active"></div>
+                      </div>
+                      <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quidem ipsum eum ullam commodi, qui, facilis a consequuntur tenetur harum doloremque, cumque fuga cupiditate cum quis possimus dignissimos incidunt repudiandae.</p>
+                      </div>
+                    </div>
+                  
+                    <div class="accordion-item1">
+                      <div class="accordion-header1">
+                         <h6> How are fees calculated for transactions and account management?</h6>
+                        <div class="accordion-toggle1 accordion-toggle-img"></div>
+                      </div>
+                      <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cupiditate sunt est voluptatum, debitis dicta provident sapiente repudiandae, iste quidem doloribus quam voluptatem expedita iure enim? Facere qui ad sit!</p>
+                      </div>
+                    </div>
+                  
+                    <div class="accordion-item1">
+                      <div class="accordion-header1">
+                     <h6>  Are there any hidden charges or additional fees that I should be aware of?</h6>
+                        <div class="accordion-toggle1 accordion-toggle-img"></div>
+                      </div>
+                      <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt neque, perferendis illum dolorum reiciendis tempore, fuga quos id sint quisquam, sit vel velit facilis maxime! In explicabo aperiam asperiores temporibus.</p>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item1">
+                      <div class="accordion-header1">
+                     <h6>  What features and benefits are included in our fintech platform?</h6>
+                        <div class="accordion-toggle1 accordion-toggle-img"></div>
+                      </div>
+                      <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae reprehenderit ea incidunt. Ullam excepturi rerum consequuntur accusamus quae, possimus ipsa culpa fugit, beatae provident modi dolorem praesentium magni architecto eveniet.</p>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ======== End of 8.1. question section ========-->
+        <!-- ======== 1.13. footer section ========  -->
+        <footer class="position-relative">
+            <div class="container">
+                <h4 class="text-center">SUBSCRIBE OUR NEWSLETTER</h4>
+                <P class="text-center pt-2 pb-3">Get latest News and Updates</P>
+                <form class="d-flex align-items-center justify-content-center" id="footer-sub2">
+                    <!-- form Subscribe massage -->
+                    <div id="Succes-box2"></div>
+                    <div class="d-flex footer-search ">
+                        <input type="email" name="search" placeholder="Enter your Email" required>
+                        <button type="submit" class="btn-hover1">Subscribe</button>
+                    </div>
+                </form>
+                <div class="footer-logo text-center pb-lg-4 pb-md-3 pb-sm-2 pb-4">
+                    <!-- footer logo  -->
+                    <a href="index.html">
+                        <figure><img src="assets/images/Logo.png" alt="img"></figure>
+                    </a>
+                </div>
+                <ul class="d-flex align-items-center justify-content-center">
+                    <li>
+                        <a href="#">Feature</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Faq</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="row footer-nav-icon">
+                    <!-- footer social icon  -->
+                    <div
+                        class="col-lg-3 col-md-3 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center">
+                        <div
+                            class="social-icon d-flex gap-2 justify-content-md-start justify-content-sm-center justify-content-center">
+                            <a href="#"> <i class="fa-brands fa-facebook-f foot-facebook"></i></a>
+                            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- footer terms privacy  -->
+                    <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                        <div class=" d-flex gap-3 p-2">
+                            <a href="#">Terms & Condition</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                    <!-- footer logo slider  -->
+                    <div class="col-lg-3 col-md-3">
+                        <div class="footer_ispsum_slider">
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-228.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-233.png" alt="qr-code"></a>
+                            </figure>
+                            <figure><a href="#"><img src="assets/images/icon/logoipsum-229.png" alt="qr-code"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="Copyright d-flex justify-content-between flex-wrap dir">
+                    <p>Copyright © 2023 Paypath by Evonicmedia. All Right Reserved.</p>
+                    <p>Powered by Evonicsoft</p>
+                </div>
+            </div>
+        </footer>
+        <!-- ======== End of 1.13. footer section ========  -->
+        </div>
+    <!-- end site wrapper -->
+    </div>
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+    <!-- bootstrap min javascript -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- counter javascript file -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>
